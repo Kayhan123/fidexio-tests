@@ -40,7 +40,7 @@ Feature: Login_Logout Functionality
   @FIDE-965 @FIDE-993
   Scenario: user sees an error message if the password is empty
     When user enters SalesManager email "salesmanager10@info.com"
-    When user doesn't enter information for password
+    Then user doesn't enter information for password
     Then user clicks to login button
     And user sees the "Please fill out this field" message
 
